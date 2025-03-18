@@ -33,7 +33,7 @@ nav {
   background-color: #3498db; /* Light blue background */
   padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centering the menu */
   align-items: center;
 }
 
