@@ -17,11 +17,11 @@ header {
   background-color: #1a252f; /* Darker header for more exposure feel */
   color: #fff;
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Reduced size of website name */
 }
 
 header p {
@@ -56,13 +56,13 @@ nav a:hover {
   color: #f1c40f;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu to 'Menu' Button */
 .menu-btn {
   display: none;
   background-color: transparent;
   border: none;
-  font-size: 2rem;
-  color: green;
+  font-size: 1.5rem;
+  color: white;
   position: absolute;
   top: 20px;
   right: 30px;
@@ -73,7 +73,7 @@ nav ul {
 }
 
 @media (max-width: 768px) {
-  /* Show hamburger button and hide the menu on small screens */
+  /* Show the menu button on small screens and hide the normal menu */
   .menu-btn {
     display: block;
   }
