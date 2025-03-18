@@ -76,26 +76,27 @@ nav ul {
   }
   
   #navMenu {
-    display: none;
-    width: 100%;
+    position: fixed;
+    left: -50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
     background-color: #27ae60;
-    position: absolute;
-    top: 60px;
+    transition: left 0.3s ease;
+  }
+
+  #navMenu.open {
     left: 0;
-    z-index: 1000;
   }
 
   #navMenu ul {
     flex-direction: column;
     padding: 20px;
+    margin-top: 60px;
   }
 
   #navMenu ul li {
     margin: 10px 0;
-  }
-
-  #navMenu.open {
-    display: block;
   }
 }
 
