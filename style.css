@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+}
+
+/* Header Section */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Navbar Section */
+nav {
+  background-color: #27ae60;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+/* Hamburger Menu */
+.menu-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  /* Show hamburger button and hide the menu on small screens */
+  .menu-btn {
+    display: block;
+  }
+  
+  #navMenu {
+    display: none;
+    width: 100%;
+    background-color: #27ae60;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  #navMenu ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #navMenu ul li {
+    margin: 10px 0;
+  }
+
+  #navMenu.open {
+    display: block;
+  }
+}
+
+/* Main Section */
+main {
+  padding: 40px;
+}
+
+.article {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.article h3 {
+  color: #2980b9;
+}
+
+.article a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.article a:hover {
+  color: #c0392b;
+}
+
+/* Footer Section */
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
